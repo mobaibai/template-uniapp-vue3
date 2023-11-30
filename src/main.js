@@ -10,10 +10,6 @@ export function createApp() {
   app.use(store)
   app.use(uviewPlus)
 
-  // app.config.globalProperties.$dialog = useDialog
-  // app.config.globalProperties.$toast = useToast
-  // app.config.globalProperties.$loading = useLoading
-
   return {
     app,
     pinia: store.Pinia
