@@ -1,0 +1,165 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "首页"
+      }
+    },
+    {
+      "path": "pages/font/index",
+      "style": {
+        "navigationBarTitleText": "font"
+      }
+    },
+    {
+      "path": "pages/size/index",
+      "style": {
+        "navigationBarTitleText": "size"
+      }
+    },
+    {
+      "path": "pages/shadow/index",
+      "style": {
+        "navigationBarTitleText": "shadow"
+      }
+    },
+    {
+      "path": "pages/border/index",
+      "style": {
+        "navigationBarTitleText": "border"
+      }
+    },
+    {
+      "path": "pages/spacing/index",
+      "style": {
+        "navigationBarTitleText": "spacing"
+      }
+    },
+    {
+      "path": "pages/shortcuts/index",
+      "style": {
+        "navigationBarTitleText": "shortcuts"
+      }
+    },
+    {
+      "path": "pages/class/index",
+      "style": {
+        "navigationBarTitleText": ":class"
+      }
+    },
+    {
+      "path": "pages/color/index",
+      "style": {
+        "navigationBarTitleText": "color"
+      }
+    },
+    {
+      "path": "pages/attributify-mode/index",
+      "style": {
+        "navigationBarTitleText": "attributify-mode"
+      }
+    },
+    {
+      "path": "pages/animation/index",
+      "style": {
+        "navigationBarTitleText": "animation"
+      }
+    },
+    {
+      "path": "pages/bg/index",
+      "style": {
+        "navigationBarTitleText": "bg"
+      }
+    },
+    {
+      "path": "pages/odd-even/index",
+      "style": {
+        "navigationBarTitleText": "odd-even"
+      }
+    },
+    {
+      "path": "pages/first-last/index",
+      "style": {
+        "navigationBarTitleText": "first-last"
+      }
+    },
+    {
+      "path": "pages/divide/index",
+      "style": {
+        "navigationBarTitleText": "divide"
+      }
+    },
+    {
+      "path": "pages/space/index",
+      "style": {
+        "navigationBarTitleText": "space"
+      }
+    },
+    {
+      "path": "pages/apply/index",
+      "style": {
+        "navigationBarTitleText": "apply"
+      }
+    },
+    {
+      "path": "pages/icon/index",
+      "style": {
+        "navigationBarTitleText": "icon"
+      }
+    },
+    {
+      "path": "pages/counter/index",
+      "style": {
+        "navigationBarTitleText": "counter"
+      }
+    },
+    {
+      "path": "pages/my/index",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+    // "enablePullDownRefresh": false,
+    // // #ifdef MP
+    // "navigationStyle": "custom",
+    // // #endif
+    // "app-plus": {
+    //   "titleNView": false
+    // }
+  },
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#306ef5",
+    "borderStyle": "black",
+    "backgroundColor": "white",
+    "description": "TabBarItem颜色: 原色(#515151), 高亮色(#306ef5)",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tab-home.png",
+        "selectedIconPath": "static/tab-home-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "iconPath": "static/tab-my.png",
+        "selectedIconPath": "static/tab-my-active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "easycom": {
+    "custom": {
+      "^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+      "^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+      "^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue"
+    }
+  }
+}
