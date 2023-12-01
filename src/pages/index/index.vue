@@ -20,6 +20,7 @@ const list = [
   { name: 'apply', path: '/pages/apply/index' },
   { name: 'icon', path: '/pages/icon/index' },
   { name: 'counter', path: '/pages/counter/index' },
+  { name: 'list', path: '/pages/list/index' },
 ]
 
 function to(to) {

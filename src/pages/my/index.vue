@@ -7,7 +7,7 @@ import { useUserStore } from '@/stores/user'
 const user = useUserStore()
 
 onMounted(() => {
-  console.log('首次加载')
+
 })
 
 const onClickLogin = async () => {

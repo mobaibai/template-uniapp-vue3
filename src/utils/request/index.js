@@ -1,5 +1,10 @@
 import Config from '@/config'
 
+/**
+ * @description: 网络请求
+ * @param {type} options
+ * @return {type}
+ */
 export default function request(options = {}) {
   if (!options.url)
     return uni.showToast({

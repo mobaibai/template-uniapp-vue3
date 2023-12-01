@@ -68,6 +68,9 @@ dependencies:
   vue-i18n:
     specifier: ^9.1.9
     version: registry.npmmirror.com/vue-i18n@9.7.1(vue@3.3.8)
+  z-paging:
+    specifier: ^2.6.3
+    version: 2.6.3
 
 devDependencies:
   '@dcloudio/types':
@@ -3589,6 +3592,11 @@ packages:
       y18n: 5.0.8
       yargs-parser: 20.2.9
     dev: true
+
+  /z-paging@2.6.3:
+    resolution: {integrity: sha512-8SdyASRPhjxvklPKSIuxt8i4PdAkidR8i+55lK8clqak3GFPom4uuWWeY9EgzXMq2Q+je6FzJpZtLqs5To75ug==, tarball: https://registry.npmmirror.com/z-paging/-/z-paging-2.6.3.tgz}
+    engines: {HBuilderX: ^3.0.7}
+    dev: false
 
   registry.npmmirror.com/@ampproject/remapping@2.2.1:
     resolution: {integrity: sha512-lFMjJTrFL3j7L9yBxwYfCq2k6qqwHyzuUl/XBnif78PWTJYyL/dfowQHWE3sp6U6ZzqWiiIZnpTMO96zhkjwtg==, tarball: https://registry.npmmirror.com/@ampproject/remapping/-/remapping-2.2.1.tgz}
