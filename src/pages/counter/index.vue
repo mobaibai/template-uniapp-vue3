@@ -1,6 +1,6 @@
 <script setup>
 import { defineAsyncComponent, onMounted, ref, reactive, watch } from 'vue'
-import { useCounterStore } from '@/stores/counter';
+import { useCounterStore } from '@/stores/counter'
 
 const counter = useCounterStore()
 
