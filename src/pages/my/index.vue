@@ -10,16 +10,34 @@ onMounted(() => {
 
 })
 
+/**
+ * @description: 登录点击
+ * @return {type}
+ */
 const onClickLogin = async () => {
-  const res = await useDialog('是否登录?')
+  useLoading('登录中...')
+
+  setTimeout(() => {
+    useLoading(false)
+    useToast('登录成功!', { icon: 'success', duration: 1000 })
+    user.setUserInfo({ isLogin: true, nickname: '访客', avatar: '/static/logo.png' })
+  }, 800)
+}
+
+/**
+ * @description: 退出登录点击
+ * @return {type}
+ */
+const onClickLogout = async () => {
+  const res = await useDialog('是否退出登录?')
   if (res.confirm) {
-    useLoading('登录中...')
+    useLoading('退出中...')
 
     setTimeout(() => {
       useLoading(false)
-      useToast('登录成功!', { icon: 'success', duration: 1000 })
-      user.setUserInfo({ isLogin: true, nickname: '访客', avatar: '/static/logo.png' })
-    }, 1000)
+      useToast('已退出!', { duration: 1000 })
+      user.setUserInfo({ isLogin: false, nickname: '', avatar: '' })
+    }, 800)
   }
 }
 </script>
@@ -31,6 +49,9 @@ const onClickLogin = async () => {
         <image :src="user.userInfo.avatar" class="w-100rpx h-100rpx rounded-full" />
       </view>
       <view class="nickname mt-20rpx text-gray-500">昵称：{{ user.userInfo.nickname }}</view>
+      <view class="button mt-300rpx w-160rpx">
+        <u-button @click="onClickLogout">退出</u-button>
+      </view>
     </view>
     <view class="button mt-300rpx w-160rpx" v-else>
       <u-button type="primary" :color="$u.color.primary" @click="onClickLogin">登录</u-button>
