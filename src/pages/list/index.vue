@@ -2,7 +2,6 @@
 import { defineAsyncComponent, onMounted, ref, reactive, watch } from 'vue'
 //必须导入需要用到的页面生命周期（即使在当前页面上没有直接使用到）
 import { onPageScroll, onReachBottom } from '@dcloudio/uni-app'
-import useZPaging from "z-paging/components/z-paging/js/hooks/useZPaging.js"
 
 onMounted(() => {
   console.log('首次加载')

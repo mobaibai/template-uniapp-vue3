@@ -7,7 +7,8 @@
 如使用 HBuilderX 报错 "@esbuild/darwin-arm64" 编译问题时，
 可在node_modules文件夹里找到 "@esbuild"，
 将 "darwin-arm64" 文件夹复制一份，
-改为 "darwin-x64" 即可解决
+改为 "darwin-x64" 即可解决。
+如果使用 pnpm，则需找到 .pnpm 里的registry.npmmirror.com+esbuild里的相应文件再修改
 ```
 
 ### 说明
