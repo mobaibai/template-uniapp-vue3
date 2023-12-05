@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import { useNavTo } from '@/utils/uniapp'
 
 const list = [
   { name: 'font', path: '/pages/font/index' },
@@ -23,20 +24,14 @@ const list = [
   { name: 'list', path: '/pages/list/index' },
 ]
 
-function to(to) {
-  uni.navigateTo({
-    url: to,
-  })
-}
-
 const loading = ref(false)
 </script>
 
 <template>
   <view class="py-20rpx" style="padding-bottom: calc(20rpx + var(--window-bottom));">
     <view class="grid grid-cols-3 justify-items-center">
-      <view v-for="(item, index) in list" :key="index" class="w-200 h-200 shadow-md center rounded-md bg-gray-50/80 mb-20rpx"
-        @click="to(item.path)">
+      <view v-for="(item, index) in list" :key="index"
+        class="w-200 h-200 shadow-md center rounded-md bg-gray-50/80 mb-20rpx" @click="useNavTo({ url: item.path })">
         {{ item.name }}
       </view>
     </view>
