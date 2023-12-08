@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import { useNavTo } from '@/utils/uniapp'
 
 const list = [
@@ -25,6 +25,15 @@ const list = [
 ]
 
 const loading = ref(false)
+
+onMounted(() => {
+  uni.$emit('onPageShow', { msg: '页面首次加载' })
+})
+
+uni.$on('onPageShow', (data) => {
+  console.log(data.msg || '页面首次加载')
+})
+
 </script>
 
 <template>
