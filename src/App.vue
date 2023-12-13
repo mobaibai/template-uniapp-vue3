@@ -13,7 +13,7 @@ onHide(() => {
 </script>
 
 <style lang="scss">
-@import "uview-plus/index.scss";
+@import '@climblee/uv-ui/index.scss';
 @import './styles/themes/theme.scss';
 @import './styles/global.scss';
 </style>

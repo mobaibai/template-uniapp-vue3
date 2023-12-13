@@ -62,9 +62,6 @@ dependencies:
   unplugin-auto-import:
     specifier: ^0.17.1
     version: 0.17.1
-  uview-plus:
-    specifier: ^3.1.41
-    version: registry.npmmirror.com/uview-plus@3.1.41
   vue:
     specifier: ^3.2.45
     version: registry.npmmirror.com/vue@3.3.8(typescript@4.9.4)
@@ -9417,16 +9414,6 @@ packages:
     version: 1.0.1
     engines: {node: '>= 0.4.0'}
     dev: true
-
-  registry.npmmirror.com/uview-plus@3.1.41:
-    resolution: {integrity: sha512-xmbV8JK73GOKZXdpzj9Dm0VCE6cIc7nchyutF33SeixCXpRr4A5Y/QuDyFEg4Vzr/lgNVvml43Ayfq9Mm1a5AQ==, tarball: https://registry.npmmirror.com/uview-plus/-/uview-plus-3.1.41.tgz}
-    name: uview-plus
-    version: 3.1.41
-    engines: {HBuilderX: ^3.1.0}
-    dependencies:
-      clipboard: registry.npmmirror.com/clipboard@2.0.11
-      dayjs: registry.npmmirror.com/dayjs@1.11.10
-    dev: false
 
   registry.npmmirror.com/vary@1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==, tarball: https://registry.npmmirror.com/vary/-/vary-1.1.2.tgz}

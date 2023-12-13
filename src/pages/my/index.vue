@@ -54,7 +54,7 @@ const onClickLogout = async () => {
       </view>
     </view>
     <view class="button mt-300rpx w-160rpx" v-else>
-      <uv-button type="primary" :color="$u.color.primary" @click="onClickLogin">登录</uv-button>
+      <uv-button type="primary" @click="onClickLogin">登录</uv-button>
     </view>
   </view>
 </template>
