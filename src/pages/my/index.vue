@@ -50,11 +50,11 @@ const onClickLogout = async () => {
       </view>
       <view class="nickname mt-20rpx text-gray-500">昵称：{{ user.userInfo.nickname }}</view>
       <view class="button mt-300rpx w-160rpx">
-        <u-button @click="onClickLogout">退出</u-button>
+        <uv-button @click="onClickLogout">退出</uv-button>
       </view>
     </view>
     <view class="button mt-300rpx w-160rpx" v-else>
-      <u-button type="primary" :color="$u.color.primary" @click="onClickLogin">登录</u-button>
+      <uv-button type="primary" :color="$u.color.primary" @click="onClickLogin">登录</uv-button>
     </view>
   </view>
 </template>

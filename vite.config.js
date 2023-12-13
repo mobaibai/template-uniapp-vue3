@@ -13,11 +13,14 @@ export default defineConfig({
 
     AutoImport({
       imports: ['vue'],
-      dts: 'src/auto-imports.d.ts',
+      dts: 'src/auto-imports.d.ts'
       // 用到 eslint 的配置
       // eslintrc: {
       //   enabled: true
       // }
     })
-  ]
+  ],
+  server: {
+    open: true
+  }
 })

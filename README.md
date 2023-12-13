@@ -1,4 +1,4 @@
-## uniapp-vue3-unocss项目
+## uniapp-vue3-unocss项目模板
 
 
 ### 问题
@@ -20,6 +20,11 @@
 ```
 
 ### 功能
+
+#### 组件库
+```
+组件库使用 [nv-ui](https://www.uvui.cn)，支持 Vue2、Vue3
+```
 
 #### 图标
 ```
