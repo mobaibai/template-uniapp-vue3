@@ -1,5 +1,6 @@
 {
   "name": "template-uniapp-vue3",
+  "description": "UniAppVue3模板",
   "version": "0.1.0",
   "scripts": {
     "dev:app": "uni -p app",
