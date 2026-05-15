@@ -2,6 +2,12 @@
   "name": "template-uniapp-vue3",
   "description": "UniAppVue3模板",
   "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@9.9.0",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.19.0 || >=22.12.0 || >=24.0.0"
+  },
   "scripts": {
     "dev:app": "uni -p app",
     "dev:custom": "uni -p",
