@@ -1,5 +1,5 @@
 import { createSSRApp } from 'vue'
-import uvUI from '@climblee/uv-ui'
+import uviewPlus from 'uview-plus'
 import App from './App.vue'
 import 'uno.css'
 import store from './stores'
@@ -7,7 +7,7 @@ import store from './stores'
 export function createApp() {
   const app = createSSRApp(App)
 
-  app.use(uvUI)
+  app.use(uviewPlus)
   app.use(store)
 
   return {
